@@ -1,0 +1,104 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#container{
+    display: grid;
+    grid-template-areas:  
+    "first second third"
+    "fourth fifth sixth"
+    "seventh eight ninenth";
+
+    margin: 50px;
+    
+
+    width: 40%; 
+}
+
+#first{
+    grid-area: first;
+
+}
+#second{
+    grid-area: second;
+}
+#third{
+    grid-area: third ;
+}
+#fourth{
+    grid-area: fourth;
+}
+#fifth{
+    grid-area:fifth;
+}
+#seventh{
+    grid-area:seventh;
+}
+
+#eight{
+    grid-area: eight;
+
+}
+#ninenth{
+    grid-area: ninenth;
+}
+
+.tile{
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 48px;
+    transition: background-color 0.3s, transform 0.1s;
+    border: 1px solid black;
+
+
+}
+.tile:hover{
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+} 
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 50px;
+    
+}
+button:hover {
+    background-color: #45a049;
+}
+
+.x {
+    color: #FF5722;
+}
+
+.o {
+    color: #2196F3;
+}
+
+.win {
+    background-color: #E8F5E9;
+    animation: pulse 1s infinite;
+}
+
+h1{
+    text-align: center;
+}
+
+#status{
+    text-align: center;
+}
