@@ -9,16 +9,7 @@
     background-color: #f0f0f0;
 }
 #container{
-    /* display: grid;
-    grid-template-areas:  
-    "first second third"
-    "fourth fifth sixth"
-    "seventh eight ninenth";
-
-    margin: 50px;
-    
-
-    width: 40%;  */
+   
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
@@ -30,18 +21,6 @@
    
 .tile{
 
-    /* padding-top: 20px;
-    padding-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: 200px;
-    width: 200px;
-    border-radius: 5px;
-    text-align: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 48px;
-    transition: background-color 0.3s, transform 0.1s;
-    border: 1px solid black; */
 
     width: 100px;
     height: 100px;
