@@ -1,11 +1,15 @@
- *{
+ body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
 }
 #container{
-    display: grid;
+    /* display: grid;
     grid-template-areas:  
     "first second third"
     "fourth fifth sixth"
@@ -14,40 +18,19 @@
     margin: 50px;
     
 
-    width: 40%; 
+    width: 40%;  */
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
 }
 
-#first{
-    grid-area: first;
 
-}
-#second{
-    grid-area: second;
-}
-#third{
-    grid-area: third ;
-}
-#fourth{
-    grid-area: fourth;
-}
-#fifth{
-    grid-area:fifth;
-}
-#seventh{
-    grid-area:seventh;
-}
-
-#eight{
-    grid-area: eight;
-
-}
-#ninenth{
-    grid-area: ninenth;
-}
-
+   
 .tile{
 
-    padding-top: 20px;
+    /* padding-top: 20px;
     padding-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 200px;
@@ -58,7 +41,19 @@
     cursor: pointer;
     font-size: 48px;
     transition: background-color 0.3s, transform 0.1s;
-    border: 1px solid black;
+    border: 1px solid black; */
+
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.1s;
+    border: 1px solid;
 
 
 }
@@ -75,7 +70,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-left: 50px;
+   
     
 }
 button:hover {
@@ -101,4 +96,5 @@ h1{
 
 #status{
     text-align: center;
+    margin-bottom: 20px;
 }
